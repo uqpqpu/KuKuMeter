@@ -194,11 +194,11 @@ def loadInitValue() {
     if (EATValidation) {
     	loadUserInfo()
         loadSiteList()
-        if(atomicState.sitesList[0] != null) {
-        	atomicState.installedSiteInfo = atomicState.sitesList[0]
-        	loadDeviceListFromSite(atomicState.sitesList[0].id)
-            if (atomicState.deviceList[0] != null) {
-            	atomicState.installedDeviceInfo = atomicState.deviceList[0]
+        if(atomicState.sitesList[1] != null) {
+        	atomicState.installedSiteInfo = atomicState.sitesList[1]
+        	loadDeviceListFromSite(atomicState.sitesList[1].id)
+            if (atomicState.deviceList[1] != null) {
+            	atomicState.installedDeviceInfo = atomicState.deviceList[1]
             }
 		}
         log.debug "initialize>> site: ${atomicState.installedSiteInfo}, device: ${atomicState.installedDeviceInfo}"
